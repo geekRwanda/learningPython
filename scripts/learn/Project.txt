@@ -1,0 +1,49 @@
+            ************
+            Project One
+            ************
+Prepared by Niyikiza Aimable
+Target: Python beginner.
+Language: Python
+Topics: Functions, packages, files reading, web-scraping, network programming
+
+
+Assignement I. Reading an HTML file
+====================================
+
+Attached here is a file called amakuru.txt
+It's an HTML file corresponding to a news page from igihe.com.
+Your assignment is to load it from python and read it.
+You will write a functin called HTML_Analysis() which does the following:
+
+- prints out the number of lines
+- Finds the News title in the page and its author and prints them
+The function should also write all this information on another file named results.txt
+
+Assignment II. Scraping a webpage
+==================================
+
+News stories on igihe.com are arranged by their IDs.(Do not disclose this, since this is actually a vulnerability on their system. We will discuss this later.)
+That means that by putting www.igihe.com/50000 this gets you to the 50000th story since the foundation of igihe.com (It's more complicated than that but let's assume it works like that.)
+
+Your assignement here is to write a function fetch_igihe() which works as follows:
+
+- Gets as in put the starting number and end number as arguments. Eg: if you run fetch_igihe(3,7) it means that the function will visit
+  from the 3rd article to the 7th article of igihe.com.
+- The function should return an error if one of the inputs is less than 45000, or if it is not an integer or if the first argument is not less than the second argument.
+- The URLs should be visited in order.
+- There should be a 5 seconds delay between visiting the pages
+- At the end, the function should print the number of articles that worked and those that didn't
+- The function should create a new file named stories.txt and write the ID, Title, Author, Date on that new file. Each story on a new line
+
+Note: Suggested modules to use: urllib2, beautifulsoup.
+Google about them and how to use them in Python.
+
+Assignement III. Crawling the web
+=================================
+
+BIRACYAZA
+
+Assignment IV. Sending a file
+==============================
+
+BIRACYAZA
